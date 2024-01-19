@@ -59,7 +59,7 @@
 				</Link>  
 				<Label text="{mdlcharm>CHANGED_TXT}" width="100%" />
 			</FlexBox>
-			
+			  
 			<HBox>
 				<core:Icon size="2rem" src="sap-icon://attachment-photo" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
 				<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
