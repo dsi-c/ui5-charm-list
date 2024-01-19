@@ -56,7 +56,7 @@
 			     	<layoutData>
 						<FlexItemData growFactor="5" />
 					</layoutData>
-				</Link>
+				</Link>  
 				<Label text="{mdlcharm>CHANGED_TXT}" width="100%" />
 			</FlexBox>
 			
