@@ -20,7 +20,6 @@
 		}">
 		<headerToolbar>
 			<OverflowToolbar>
-
 			    <SearchField width="50%" search=".onFiltermdlcharms" />		
 				<ToolbarSpacer />
 				<Button tooltip="Sort"
@@ -29,12 +28,12 @@
 			</OverflowToolbar>		
 		</headerToolbar>
 
-		<CustomListItem class='zli'>
+<!-- Line 1 -->
+		<CustomListItem class="zli">
 			<FlexBox alignItems="Start">
 				<Link text="{mdlcharm>OBJECT_ID} {mdlcharm>DESCRIPTION}" 
 				      href="{mdlcharm>CHARM_URL}" 
 					  emphasized="true"
-					  style="min-width:500px" 
 					  width="100%" 
 					  target="_blank"
 					  class="">
@@ -42,35 +41,34 @@
 						<FlexItemData growFactor="5" />
 					</layoutData>
 				</Link>
-				<Label text="{mdlcharm>CHANGED_TXT}" width="100%" />
+				<Label text="{mdlcharm>CHANGED_TXT}" width="100%">
+				</Label>
 			</FlexBox>
-
+<!-- Line 2 -->
 			<FlexBox alignItems="Start">
-				<Link text="{mdlcharm>OBJECT_ID} {mdlcharm>DESCRIPTION}" 
-				      href="{mdlcharm>CHARM_URL}" 
-					  emphasized="true"
-					  style="min-width:500px" 
+				<Label text="{mdlcharm>PROCESS_TYPE_TXT} {mdlcharm>REF_TEXT_OBJECT}" width="100%" >
+					<layoutData>
+						<FlexItemData growFactor="5" />
+					</layoutData>
+				</Label>			
+				<Link text="{mdlcharm>ZZSNOW_ID}" 
+				      href="{mdlcharm>ZZSNOW_URL}" 
+					  emphasized="false"
 					  width="100%" 
 					  target="_blank"
 					  class="">
-			     	<layoutData>
-						<FlexItemData growFactor="5" />
-					</layoutData>
 				</Link>  
-				<Label text="{mdlcharm>CHANGED_TXT}" width="100%" />
 			</FlexBox>
-			  
-			<HBox>
-				<core:Icon size="2rem" src="sap-icon://attachment-photo" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
-				<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
-					<Link text="{mdlcharm>OBJECT_ID}" target="{ProductPicUrl}" press="handlePress"/>
-
-				</VBox>
-				<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
-
-					<Label text="{mdlcharm>DESCRIPTION}"/>
-				</VBox>				
-			</HBox>
+<!-- Line 3 -->			
+			<FlexBox alignItems="Start">  
+				<Label text="{mdlcharm>CONCATSTATUSER}" width="100%">
+					<layoutData>
+						<FlexItemData growFactor="2" />
+					</layoutData>
+				</Label>			
+				<Label text="{mdlcharm>CURR_PARTNER}" width="100%" >
+				</Label>	
+			</FlexBox>
 		</CustomListItem>
 
 	</List>
